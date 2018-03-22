@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <title>Neues in Metador</title>
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="/home/aschaefer/dev/reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="/home/aschaefer/dev/reveal.js/css/theme/black.css" id="theme">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="/home/aschaefer/dev/reveal.js/lib/css/zenburn.css">
+		<!-- Printing and PDF exports -->
+		<script>
+		 var link = document.createElement( 'link' );
+		 link.rel = 'stylesheet';
+		 link.type = 'text/css';
+		 link.href = window.location.search.match( /print-pdf/gi ) ? '/home/aschaefer/dev/reveal.js/css/print/pdf.css' : '/home/aschaefer/dev/reveal.js/css/print/paper.css';
+		 document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<!--[if lt IE 9]>
+		  <script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+      <div class="slides">
+				<section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+					<h1>Neues in Metador</h1>
+					<p>Der Metadaten Editor (mit CSW)</p>
+					<p>
+						<small><a href="https://www.osgeo.org/member/schaefer-axel/">Axel Schaefer</a> | <a href="https://www.wheregroup.com/">WhereGroup</a></small>
+					</p>
+          <p>
+            <small>
+              FOSSGIS 2018, Bonn, 23.03.2018
+            </small>
+          </p>
+				</section>
+
+        <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+          <h2>Gliederung</h2>
+          <p>
+            <ul>
+              <li>Allgemeine Funktionen / Oberfläche</li>
+              <li>Editieren / Formulare</li>
+              <li>Adressverwaltung</li>
+              <li>Validierung (mandatory / optional / conditional)
+              <li>Administration</li>
+              <li>Instanzen</li>
+              <li>Plugins</li>
+              <li>CSW</li>
+              <li>Zusammenfassung</li>
+            </ul>
+          </p>
+          <aside class="notes">notes</aside>
+        </section>
+
+        <section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Allgemeine Funktionen / Oberfläche
+            </p>
+            <aside class="notes">notes</aside>
+          </section>
+
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Startbildschirm<br />
+              <img src="images/allgemein/metador_start.png" width="70%"></img>
+            </p>
+            <aside class="notes">notes</aside>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Kartenunterstützung<br />
+              <img src="images/allgemein/kartenunterstuetzung.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Filterkriterien<br />
+              <img src="images/allgemein/filterkriterien.png" width="20%"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Ausgabe Ergebnis<br />
+              <img src="images/allgemein/ausgabe_ergebnis.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Ausgabe XML<br />
+              <img src="images/allgemein/ausgabe_xml.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Ausgabe HTML / PDF <br />
+              <img src="images/allgemein/ausgabe_html.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Ergebnis gesperrt<br />
+              <img src="images/allgemein/ergebnis_gesperrt.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Formular gesperrt <br />
+              <img src="images/allgemein/formular_gesperrt.png"></img>
+            </p>
+          </section>
+        </section>
+
+        <section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Editieren / Formulare
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Ergebnis Editierung<br />
+              <img src="images/editieren/ergebnis_editierung.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Tabs und Strukturierung des Formulars<br />
+              <img src="images/editieren/tabulatoren.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Auswahllisten<br />
+              <img src="images/editieren/dropdownlisten.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Auswahlliste bearbeiten<br />
+              <img src="images/editieren/auswahlliste.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Auswahlliste Übereinstimmung<br />
+              <img src="images/editieren/uebereinstimmung_formular.png" width="70%"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Auswahlliste Übereinstimmung Administration<br />
+              <img src="images/editieren/uebereinstimmung_auswahlliste.png" width="70%"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Schlüsselwörter und Repositories <br />
+              <img src="images//auswahllisten_keywords/keywords.png" width="70%"></img>
+            </p>
+          </section>
+
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Bezug zu anderen Datenquellen (operates on)<br />
+              <img src="images/editieren/bezug_zu_anderen_datenbestaenden.png"></img>
+            </p>
+          </section>
+        </section>
+
+        <section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Adressverwaltung
+            </p>
+            <aside class="notes">notes</aside>
+          </section>
+
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Adressuche<br />
+              <img src="images/adressen/adressuche.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Adressverwaltung<br />
+              <img src="images/adressen/adressverwaltung.png"></img>
+            </p>
+          </section>
+        </section>
+
+        <section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Validierung (mandatory, conditional, optional)
+            </p>
+            <aside class="notes">notes</aside>
+          </section>
+
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Validierung im Formular<br />
+              <img src="images/validierung/validierung.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Validierung von Abhängigkeiten (OR)<br />
+              <img src="images/validierung/validierung_abhaengigkeiten1.png" width="70%"></img><br />
+              <img src="images/validierung/validierung_abhaengigkeiten2.png" width="70%"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Workflow Validierung und Freigabe<br />
+              <img src="images/validierung/freigabe_validierung.png" width="70%"></img>
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Administration
+            </p>
+            <aside class="notes">notes</aside>
+          </section>
+
+          
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Übersicht<br />
+              <img src="images/administration/uebersicht.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Systemmeldungen / Auszeit<br />
+              <img src="images/administration/systemmeldung_admin.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Proxy<br />
+              <img src="images/administration/proxy.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Logging<br />
+              <img src="images/logging/logging_admin.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Logging Ausgabe<br />
+              <img src="images/logging/logging_ausgabe.png"></img>
+            </p>
+          </section>
+        </section>
+
+        <section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Instanzen<br />
+              Logische Einteilung der Metadaten. Auswirkungen auf
+              <ul>
+                <li>Import</li>
+                <li>Oberfläche</li>
+                <li>CSW</li>
+                <li>Validierungslogik und Quarantäne</li>
+                <li>...</li>
+              </ul>
+            </p>
+            <aside class="notes">notes</aside>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Instanzen Übersicht<br />
+              <img src="images/instanzen/instanzen1.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Eine Instanz anlegen<br />
+              <img src="images/instanzen/instanzen2.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Instanzen in der Oberfläche<br />
+              <img src="images/instanzen/instanzen_oberflaeche.png"></img>
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Plugins
+              <ul>
+                <li>Eigene Logik</li>
+                <li>Eigene Profile</li>
+                <li>...</li>
+              </ul>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Plugins<br />
+              <img src="images/plugins/plugins.png" width="70%"></img>
+            </p>
+          </section>
+        </section>
+        
+        <section>
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              CSW
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              <br />
+              <img src="images/csw/csw_allgemein.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              <br />
+              <img src="images/csw/csw_liste.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              <br />
+              <img src="images/csw/csw_details.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              <br />
+              <img src="images/csw/csw_capabilities.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              <br />
+              <img src="images/csw/csw_describe.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              <br />
+              <img src="images/csw/csw_georecordbyid.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              <br />
+              <img src="images/csw/csw_getrecords_subject_and.png"></img>
+            </p>
+          </section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              <br />
+              <img src="images/csw/csw_insert.png"></img>
+            </p>
+          </section>
+        </section>
+
+
+        <section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Allgemeines
+              <ul>
+                <li>Release und Veröffentlichung</li>
+                <li>Bestandteile</li>
+                <li>Was müssen Sie wissen und vorbereiten?</li>
+                <li>CSW?</li>
+              </ul>
+            </p>
+          </section>
+        </section>
+
+        <section>
+
+          <section data-background="wg/logo1.png" data-background-size="150px" data-background-position="95% 3%">
+            <p>
+              Vielen Dank für Ihre Aufmerksamkeit.
+              <br />
+              axel.schaefer@wheregroup.com
+              <br />
+              info@wheregroup.com
+              <br />
+              <img src="wg/logo4.png"></img>
+            </p>
+          </section>
+        </section>
+      </div>
+
+      <script src="/home/aschaefer/dev/reveal.js/lib/js/head.min.js"></script>
+		  <script src="/home/aschaefer/dev/reveal.js/js/reveal.js"></script>
+      
+		  <script>
+			 // More info https://github.com/hakimel/reveal.js#configuration
+			 Reveal.initialize({
+				   controls: true,
+				   progress: true,
+				   history: true,
+				   center: true,
+				   transition: 'slide', // none/fade/slide/convex/concave/zoom
+				   // More info https://github.com/hakimel/reveal.js#dependencies
+				   dependencies: [
+					     { src: '/home/aschaefer/dev/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					     { src: '/home/aschaefer/dev/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					     { src: '/home/aschaefer/dev/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					     { src: '/home/aschaefer/dev/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					     { src: '/home/aschaefer/dev/reveal.js/plugin/search/search.js', async: true },
+					     { src: '/home/aschaefer/dev/reveal.js/plugin/zoom-js/zoom.js', async: true },
+					     { src: '/home/aschaefer/dev/reveal.js/plugin/notes/notes.js', async: true }
+				   ]
+			 });
+		  </script>
+  </body>
+</html>
